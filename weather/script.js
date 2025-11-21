@@ -4,7 +4,7 @@ const btn = document.getElementById("btn");
 
 const output = document.getElementById("output-box");
 
-const apikey = "e9413d66e57315b811138420d35cfc21";
+const apikey = "db5c0a64548144cdb16104957252505";
 
 btn.addEventListener("click",getWeather);
 
@@ -12,7 +12,7 @@ btn.addEventListener("click",getWeather);
 function getWeather(){
     const city = input.value;
     
-    const url = 'https://api.openweathermap.org/data/3.0/onecall?lat=22.57&lon=88.36&appid={e9413d66e57315b811138420d35cfc21}'
+    const url = 'http://api.weatherapi.com/v1/current.json?key=db5c0a64548144cdb16104957252505&q=Kolkata'
 
     const 
 
