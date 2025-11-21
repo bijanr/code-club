@@ -9,12 +9,14 @@ const apikey = "db5c0a64548144cdb16104957252505";
 btn.addEventListener("click",getWeather);
 
 
-function getWeather(){
+async function getWeather(){
     const city = input.value;
     
     const url = `http://api.weatherapi.com/v1/current.json?key=${apikey}&q=${city}`
 
-    const data = fetch(url);
+    const data = await fetch(url);
 
-    output.innerText(data)
+    const value = data.json;
+
+    console.log(value)
 }
