@@ -12,8 +12,9 @@ btn.addEventListener("click",getWeather);
 function getWeather(){
     const city = input.value;
     
-    const url = 'http://api.weatherapi.com/v1/current.json?key=db5c0a64548144cdb16104957252505&q=Kolkata'
+    const url = `http://api.weatherapi.com/v1/current.json?key=${apikey}&q=${city}`
 
-    const 
+    const data = fetch(url);
 
+    output.innerText(data)
 }
